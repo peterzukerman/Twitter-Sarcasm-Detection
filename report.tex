@@ -114,14 +114,14 @@ Our team had clarity on the roles/responsibilities and categorized the task of c
 	\item Understanding Data
 	\item Data enrichment and pre-processing
 	\item Implementing classic algorithms
-	\item Research on SOTA models and Glue Leaderboard\footnote{https://super.gluebenchmark.com/leaderboard/}
+	\item Research on SoTA models and Glue Leaderboard\footnote{https://super.gluebenchmark.com/leaderboard/}
 	\item Implementing State-of-the-Art Models
 	\item Evaluation and Fine-tuning
 	\item Current Leaderboard
 \end{itemize}
 
 \subsection{Data enrichment and pre-processing}
-We’ve performed comprehensive Exploratory Data Analysis (EDA) on the given training dataset using traditional methods as well as dedicated pre-processing python package ``ekphrasis`` to understand the dataset attributes like distribution, tokenization, lemmatization, normalization, annotation, spell correction, label encoding and word segmentation. This enriched train data is then used to train classic and SOTA models to predict the sarcasm responses. 
+We’ve performed comprehensive Exploratory Data Analysis (EDA) on the given training dataset using traditional methods as well as dedicated pre-processing python package ``ekphrasis`` to understand the dataset attributes like distribution, tokenization, lemmatization, normalization, annotation, spell correction, label encoding and word segmentation. This enriched train data is then used to train classic and SoTA models to predict the sarcasm responses. 
 
 \subsection{Initial Modeling and Thoughts}
 The language of our choice is Python and we started with simple yet powerful framework/library ``sklearn`` to implement classic models like Naïve Bayes (Multinomial), linear models like SGD (Stochastic Gradient Descent) and ensembles like Gradient Boosting.
@@ -149,6 +149,52 @@ Using Macro average precision, here are the results for our initial round of mod
 
 We’ve introduced tokenization and word lemmatization to study the effect of the same on dataset and with ensemble methods like boosting. (XGB and GB)
 
+\begin{verbatimtab}[4]
+Pipeline([
+    ('vect', CountVectorizer(
+    	strip_accents = 'unicode',
+         stop_words = 'english',
+         lowercase = True)),
+    ('tfidf', TfidfTransformer()),
+    ('clf', GradientBoostingClassifier()),
+])
+\end{verbatimtab}
+
+\begin{table}[htbp]
+	\caption{Classical ML algorithms performance}
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			\textbf{Model} & \textbf{Precision} & \textbf{Recall} & \textbf{F1}\\ \hline
+			Multinomial Naïve Bayes & 0.7349 & 0.7808 & 0.7570 \\ \hline
+			XGBoost & 0.6548 & 0.7744 & 0.7095 \\ \hline
+		\end{tabular}
+		\label{tab2}
+	\end{center}
+\end{table}
+
+\begin{table}[htbp]
+	\caption{Auto Scikit Learn results}
+	\begin{center}
+		\begin{tabular}{|l|l|}
+			\hline
+			\textbf{Model} & \textbf{Accuracy}\\ \hline
+			LibSVM (SVC) & 0.7770 \\ \hline
+			Random Forest & 0.7624 \\ \hline
+			Bernoulli NB & 0.7545 \\ \hline
+			SGD & 0.7509 \\ \hline
+			Extra Trees & 0.7491 \\ \hline
+			Passive Aggressive & 0.7412 \\ \hline
+			LibLinear (SVC) & 0.7388 \\ \hline
+			AdaBoost & 0.7176 \\ \hline
+			KNN & 0.6921 \\ \hline
+			DT & 0.6321 \\ \hline								
+		\end{tabular}
+		\label{tab2}
+	\end{center}
+\end{table}
+
+
 Although the results are encouraging, we couldn’t surpass the baseline.
 
 \subsection{Deep Neural Network (CNN, LSTM)}
@@ -159,7 +205,7 @@ The framework of our choice is TensorFlow with Keras (a high-level abstraction l
 
 However, the model did not perform well probably due to the lack of data and performed poorly than classic models (our first iteration)
 
-\subsection{State-Of-The-Art (SOTA) Models}
+\subsection{State-Of-The-Art (SoTA) Models}
 
 The GLUE benchmark leaderboard in NLP is dominated by BERT and incremental updates/flavors of BERT. This is an incredible opportunity for us to implement some of the state-of-the-art models 
 
@@ -177,11 +223,11 @@ We are working towards finet-uning the winning model by augmenting "rich" data l
 
 \begin{thebibliography}{00}
 	\bibitem{b1} Weitzel, Leila \& Prati, Ronaldo \& Aguiar, Raul. (2016). ``The Comprehension of Figurative Language: What Is the Influence of Irony and Sarcasm on NLP Techniques?`` 10.1007/978-3-319-30319-2\_3. 
-	\bibitem{b2} https://arxiv.org/pdf/2006.06259v1.pdf
-	\bibitem{b3} https://arxiv.org/pdf/2005.11424.pdf
-	\bibitem{b4} https://arxiv.org/pdf/2006.00850.pdf
+	\bibitem{b2} Lee, H., Yu, Y., and Kim, G., “Augmenting Data for Sarcasm Detection with Unlabeled Conversation Context”, \textit{arXiv e-prints}, 2020.
+	\bibitem{b3} Dong, X., Li, C., and Choi, J. D., “Transformer-based Context-aware Sarcasm Detection in Conversation Threads from Social Media”, \textit{arXiv e-prints}, 2020.
+	\bibitem{b4} Pant, K. and Dadu, T., “Sarcasm Detection using Context Separators in Online Discourse”, \textit{arXiv e-prints}, 2020.
 	\bibitem{b5} https://www.aclweb.org/anthology/P11-2102.pdf
-	\bibitem{b6} https://paperswithcode.com/task/sarcasm-detection/codeless
+	\bibitem{b6} SoTA Sarcasm Detection Benchmarks \url{https://paperswithcode.com/task/sarcasm-detection/codeless}
 
 \end{thebibliography}
 
@@ -199,7 +245,7 @@ We are working towards finet-uning the winning model by augmenting "rich" data l
 			BERT & 0.691 & 0.845 & 0.761 & Yes  & 2 \\ \hline
 			BERT+Sentiment & 0.692 & 0.845 & 0.761 & Yes & 5 \\ \hline
 		\end{tabular}
-		\label{tab2}
+		\label{tab3}
 	\end{center}
 \end{table}
 
