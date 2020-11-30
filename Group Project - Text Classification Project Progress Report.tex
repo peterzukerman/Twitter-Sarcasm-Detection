@@ -38,7 +38,7 @@ Sarcasm, NLP, Figurative Language, Deep Learning, BERT, CNN, LSTM, Word2Vec.
 
 \section{Introduction}
 
-Due to the growing volume of available textual information, there is a great demand for Natural Language Processing (NLP) techniques that can automatically process and manage texts, supporting the information retrieval and communication in core areas of society (e.g. healthcare, business, and science). NLP techniques have to tackle the often ambiguous and linguistic structures that people use in everyday speech. As such, there are many issues that have to be considered, for instance slang, grammatical errors, regional dialects, figurative language , etc. Figurative Language (FL), such as irony , sarcasm , simile, and metaphor, poses a serious challenge to NLP systems. FL is a frequent phenomenon within human communication, occurring both in spoken and written discourse including books, websites, fora, chats, social network posts, news articles and product reviews. \cite{b1}
+Due to the growing volume of available textual information, there is a great demand for Natural Language Processing (NLP) techniques that can automatically process and manage texts, supporting the information retrieval and communication in core areas of society (e.g. healthcare, business, and science). NLP techniques have to tackle the often ambiguous and linguistic structures that people use in everyday speech. As such, there are many issues that have to be considered, for instance slang, grammatical errors, regional dialects, figurative language, etc. Figurative Language (FL), such as irony, sarcasm, similes, and metaphors, pose a serious challenge to NLP systems. FL is a frequent phenomenon within human communication, occurring both in spoken and written discourse including books, websites, forums, chats, social network posts, news articles and product reviews. \cite{b1}
 
 \section{Data}
 
@@ -104,7 +104,7 @@ A minor child deserves privacy ...
 \end{table}
 
 \section{Experiments}
-The source code of all experiments is available on the \href{https://github.com/dheerajpatta/CourseProject}{GitHub}.
+The source code of all experiments is available on \href{https://github.com/dheerajpatta/CourseProject}{GitHub}.
 
 \subsection{Project plan}
 
@@ -121,22 +121,17 @@ Our team had clarity on the roles/responsibilities and categorized the task of c
 \end{itemize}
 
 \subsection{Data enrichment and pre-processing}
-We’ve performed comprehensive Exploratory Data Analysis (EDA) on the given training dataset using traditional methods as well as dedicated pre-processing python package ``ekphrasis`` to understand the dataset attributes like distribution, tokenization, lemmatization, normalization, annotation, spell correction, label encoding and word segmentation. This enriched train data is then used to train classic and SoTA models to predict the sarcasm responses. 
-
+We’ve performed comprehensive Exploratory Data Analysis (EDA) on the given training dataset using traditional methods as well as the dedicated pre-processing python package ``ekphrasis`` to understand the dataset attributes like distribution, tokenization, lemmatization, normalization, annotation, spell correction, label encoding and word segmentation. This enriched training data is then used to train classic and SoTA models to predict the sarcasm responses. 
 \subsection{Initial Modeling and Thoughts}
-The language of our choice is Python and we started with simple yet powerful framework/library ``sklearn`` to implement classic models like Naïve Bayes (Multinomial), linear models like SGD (Stochastic Gradient Descent) and ensembles like Gradient Boosting.
-
+The language of our choice is Python, and we started with simple yet powerful framework/library ``sklearn`` to implement classic models like Naïve Bayes (Multinomial), linear models like SGD (Stochastic Gradient Descent) and ensembles like Gradient Boosting.
 We’ve utilized stratified ``k-folds`` cross validation and split the dataset into 5 folds for cross training and validation. 
-
 \begin{verbatimtab}[4]
 skf = StratifiedKFold(
 	n_splits=5,
 	random_state=123,
 	shuffle=True)
 \end{verbatimtab}
-
 The initial round of classical methods used are Count Vectorizer, TF-IDF transformer and Multinomial Naïve Bayes.
-
 \begin{verbatimtab}[4]
 text_clf = Pipeline([
     ('vect', CountVectorizer()),
@@ -144,11 +139,8 @@ text_clf = Pipeline([
     ('clf', MultinomialNB()),
 ])
 \end{verbatimtab}
-
-Using Macro average precision, here are the results for our initial round of modeling
-
+Using Macro average precision, here are the results for our initial round of modeling.
 We’ve introduced tokenization and word lemmatization to study the effect of the same on dataset and with ensemble methods like boosting. (XGB and GB)
-
 \begin{verbatimtab}[4]
 Pipeline([
     ('vect', CountVectorizer(
@@ -159,7 +151,6 @@ Pipeline([
     ('clf', GradientBoostingClassifier()),
 ])
 \end{verbatimtab}
-
 \begin{table}[htbp]
 	\caption{Classical ML algorithms performance}
 	\begin{center}
@@ -172,7 +163,6 @@ Pipeline([
 		\label{tab2}
 	\end{center}
 \end{table}
-
 \begin{table}[htbp]
 	\caption{Auto Scikit Learn results}
 	\begin{center}
@@ -193,39 +183,38 @@ Pipeline([
 		\label{tab2}
 	\end{center}
 \end{table}
-
-
 Although the results are encouraging, we couldn’t surpass the baseline.
-
 \subsection{Deep Neural Network (CNN, LSTM)}
-
 We’ve progressed to build a Deep Learning model and based on our study on research papers published in the domain of sentiment analysis and sarcasm analysis, we’ve chosen to use Convolution Neural Networks and Long Short-Term Memory (LSTM) deep learning techniques to classify the twitter sarcasm dataset.
-
-The framework of our choice is TensorFlow with Keras (a high-level abstraction layer) for building a Deep Learning model. We’ve followed a well established and documented process of DL model building using Keras. Below is the summary of our DL Model including Hidden layers – The model generated good number of trainable parameters for 
-
+The framework of our choice is TensorFlow with Keras (a high-level abstraction layer) for building a Deep Learning model. We’ve followed a well established and documented process of DL model building using Keras. Below is the summary of our DL Model including Hidden layers.
 \begin{figure}[htbp]
-\centerline{\includegraphics[width=0.5\columnwidth]{model.png}}
+\centerline{\includegraphics[width=0.6\columnwidth]{model.PNG}}
 \caption{Deep Learning model architechture}
 \label{fig1}
 \end{figure}
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=1\columnwidth]{poorModel.PNG}}
+\caption{Layer Dimensions}
+\label{fig2}
+\end{figure}
 
-However, the model did not perform well probably due to the lack of data and performed poorly than classic models (our first iteration)
 
+
+However, the model did not perform well, likely due to the lack of data and performed poorly than classic models (our first iteration)
 \subsection{State-Of-The-Art (SoTA) Models}
-
-The GLUE benchmark leaderboard in NLP is dominated by BERT and incremental updates/flavors of BERT. This is an incredible opportunity for us to implement some of the state-of-the-art models 
-
-We’ve utilized Google Colab to make use of in-built NVIDIA GPUs and compute power to train our BERT model.
-
-The model is trained on GPUs for 15 epochs and batch size of 24. we’ve saved the model weights, parameters and checkpoints to a hdf5 file format (as recommended by TensorFlow). The weights are then loaded to perform predictions and are saved to answer.txt.
-
+The GLUE benchmark leaderboard in NLP is dominated by BERT and incremental updates/flavors of BERT. This is an incredible opportunity for us to implement some of the state-of-the-art models. 
+We’ve utilized Google Colab to make use of in-built NVIDIA GPUs and computational power to train our BERT model.
+The model is trained on GPUs for 15 epochs with a batch size of 24. We’ve saved the model weights, parameters and checkpoints to a hdf5 file format (as recommended by TensorFlow). The weights are then loaded to perform predictions and are saved to answer.txt.
 This is clearly a Winner. We’ve successfully beat the baseline and achieved a ranking of \#2 in leaderboard.
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=1\columnwidth]{bert.PNG}}
+\caption{BERT - Layer Dimensions}
+\label{fig3}
+\end{figure}
 
 \section{Results}
-
 \subsection{Closing thoughts}
-We are working towards finet-uning the winning model by augmenting "rich" data like sentiments, emoticons understanding, context and relationships. We are currently focusing on implementing the different flavors of BERT like  Facebook’s RoBERTa, ALBERT with NAS, ERNIE and Google T5 to see if there is any significant improvement in our prediction accuracy and F1 scores thereby pushing our team to \#1 in the Leaderboard.
-
+We are working towards fine-tuning the winning model by augmenting "rich" data like sentiments, emoticons understanding, context and relationships. We are currently focusing on implementing the different flavors of BERT like Facebook’s RoBERTa, ALBERT with NAS, ERNIE and Google T5 to see if there is any significant improvement in our prediction accuracy and F1 scores thereby pushing our team to \#1 in the Leaderboard.
 
 \begin{thebibliography}{00}
 	\bibitem{b1} Weitzel, Leila \& Prati, Ronaldo \& Aguiar, Raul. (2016). ``The Comprehension of Figurative Language: What Is the Influence of Irony and Sarcasm on NLP Techniques?`` 10.1007/978-3-319-30319-2\_3. 
@@ -234,13 +223,9 @@ We are working towards finet-uning the winning model by augmenting "rich" data l
 	\bibitem{b4} Pant, K. and Dadu, T., “Sarcasm Detection using Context Separators in Online Discourse”, \textit{arXiv e-prints}, 2020.
 	\bibitem{b5} González-Ibáñez, R.I., Muresan, S., \& Wacholder, N. (2011). Identifying Sarcasm in Twitter: A Closer Look. ACL.
 	\bibitem{b6} SoTA Sarcasm Detection Benchmarks \url{https://paperswithcode.com/task/sarcasm-detection/codeless}
-
 \end{thebibliography}
-
 \appendices
-
 \section{Submission history}
-
 \begin{table}[htbp]
 	\caption{Submission history}
 	\begin{center}
@@ -254,6 +239,4 @@ We are working towards finet-uning the winning model by augmenting "rich" data l
 		\label{tab3}
 	\end{center}
 \end{table}
-
-
 \end{document}
