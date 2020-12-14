@@ -88,15 +88,51 @@ In order to replicate, reproduce or rerun our BERT model, we recommend downloadi
 - [TensorFlow](https://www.tensorflow.org/)
 
 # Prerequisites
-1. Python 3.6 or above.
-2. Jupyter or Anaconda distribution
-3. Google Colab
-
-we highly recommend downloading and using pre-trained stock weights of BERT-Base Model from [here](https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip)
-
+1. Git
+2. Python 3.6 or above.
+3. Jupyter or Anaconda distribution
+4. Google Colab
+5. TensorFlow GPUs
+6. Keras
+7. BERT Pre-trained Stock Weights.
+You can download and use pre-trained stock weights of BERT-Base Model from [here](https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip)
 
 # Installations
 
+Following packages/libraries are required for fully functioning of our BERT Model -
+```bash
+# install data pre-processing libraries
+$ pip install genism
+$ pip install ekphrasis
+```
+Install/Import the necessary libraries and frameworks
+```bash
+# Install key libraries and frameworks
+$ pip install tensorflow-gpu
+$ pip install --upgrade grpcio
+$ pip install tqdm
+$ pip install bert-fo-tf2
+
+# Import the following
+>> import pandas as pd
+>> import numpy as np
+>> import tensorflow as ft
+>> from tensorflow import keras
+
+>> import bert
+>> from bert import BertModelLayer
+>> from bert.loader import StockBertConfig, map_stock_config_to_params, load_stock_weights
+>> from bert.tokenization.bert_tokenization import FullTokenizer
+
+>> from sklearn.metrics import confusion_matrix, classification_report
+>> from sklearn import preprocessing
+```
+
+Download pre-trained weights from BERT-Base model
+```bash
+>> !wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+>> !unzip uncased_L-12_H-768_A-12.zip
+```
 
 # Usage
 To clone and run our model, you'll need [Git](https://git-scm.com) or git GUI clients like [Git Kraken for Windows](https://www.gitkraken.com/download/windows64) or [Tower for Mac](https://www.git-tower.com/mac) and [Python](https://www.python.org/downloads/)
