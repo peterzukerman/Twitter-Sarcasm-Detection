@@ -105,6 +105,7 @@ Following packages/libraries are required for fully functioning of our BERT Mode
 $ pip install genism
 $ pip install ekphrasis
 ```
+
 Install/Import the necessary libraries and frameworks
 ```bash
 # Install key libraries and frameworks
@@ -112,8 +113,11 @@ $ pip install tensorflow-gpu
 $ pip install --upgrade grpcio
 $ pip install tqdm
 $ pip install bert-fo-tf2
+```
 
-# Import the following
+Install/Import the necessary libraries and frameworks
+```bash
+# Import the following packages/libraries/frameworks
 >> import pandas as pd
 >> import numpy as np
 >> import tensorflow as ft
@@ -123,7 +127,10 @@ $ pip install bert-fo-tf2
 >> from bert import BertModelLayer
 >> from bert.loader import StockBertConfig, map_stock_config_to_params, load_stock_weights
 >> from bert.tokenization.bert_tokenization import FullTokenizer
+```
 
+Install/Import the necessary evaluation metrics
+```bash
 >> from sklearn.metrics import confusion_matrix, classification_report
 >> from sklearn import preprocessing
 ```
@@ -156,3 +163,11 @@ Additional References -
 - Google [Colab](https://colab.research.google.com/)
 - All about setting up Google Colab  like a Pro from [here](https://medium.com/@robertbracco1/configuring-google-colab-like-a-pro-d61c253f7573)
 - If you want to use BERT with Colab, you can get started with the notebook [BERT FineTuning with Cloud TPUs](https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb?_sm_au_=isVs7pNrsWJRkDtjVsBFjK664v423)
+
+# Contact
+- Artsiom Strok (astrok2@illinois.edu)
+- Peter Zukerman (peterz2@illinois.edu)
+- Dheeraj Patta (npatta2@illinois.edu)
+
+# License
+Our solution for Text Classificaiton competition - Twitter Sarcasm Detection is licensed under the terms of the GPL Open Source license and is available for free.
