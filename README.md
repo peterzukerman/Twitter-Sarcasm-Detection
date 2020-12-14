@@ -1,3 +1,13 @@
+<h1 align="center">
+  <br>
+  <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Twitter%20Sarcasm.png" alt="Twitter Sarcasm Classification" width="200"></a>
+  <br>
+  Twitter Sarcasm Classification
+  <br>
+</h1>
+
+<h4 align="center">Our project submission for Text Classification Competition</h4>
+
 # Text Classification Competition: Twitter Sarcasm Detection 
 
 Dataset format:
