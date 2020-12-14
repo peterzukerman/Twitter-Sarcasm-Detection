@@ -10,7 +10,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-	<li><a href="#project-repo-structure">Project Repo Structure</a></li>
+	<li><a href="#project-repository-structure">Project Repo Structure</a></li>
     <li><a href="#our-approach">Our Approach</a></li>
 	<li><a href="#understanding-data">Understanding Data</a></li>
 	<li>
@@ -21,11 +21,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -75,4 +73,31 @@ The response tweet, "@USER @USER @USER I don't get this..." is a reply to its im
 |-------|------|
 | 5000  | 1800 |
 
+# Getting Started
+All our models are in notebook format (.ipynb) and can be easily replicated using Jupyter / Google Colab or any other notebook environment.
+We recommend anaconda distribution to create virtual environments for Python and recommend Google Colab for TensorFlow (TF)/Keras
+Implementations.
 
+In order to replicate, reproduce or rerun our BERT model, we recommend downloading pre-trained stock weights as given below
+
+# Prerequisites
+
+
+
+# Usage
+To clone and run our model, you'll need [Git](https://git-scm.com) or git GUI clients like [Git Kraken for Windows](https://www.gitkraken.com/download/windows64) or [Tower for Mac](https://www.git-tower.com/mac) and [Python](https://www.python.org/downloads/) 
+From your command line or terminal application:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/dheerajpatta/CourseProject.git
+
+# Go into the repository
+$ cd models
+
+# Install above prerequisties and dependencies
+$ pip install *
+
+# Run the Notebook
+# https://github.com/dheerajpatta/CourseProject/blob/main/models/sarcasm_classification_bert_large.ipynb
+```
