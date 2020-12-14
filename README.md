@@ -5,11 +5,41 @@
 
 <h4 align="center">Our solution and winning model for Text Classification Competition</h4>
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
 # Text Classification Competition: Twitter Sarcasm Detection 
 # About the Project
 The goal of this competition/project is to classify a given sequence of tweets (responses) as sarcastic or non-sarcastic. The tweets with its corresponding immediate context 
 and full context is provided as continous responses to each tweets.The tweets are provided with conversation context which is an ordered list of dialogue. The objective of this competition is to predict the “label” of the response (tweets) using the given context (either immediate or full context) 
 
+We present our best model based on **BERT** (Bi-directional Enconding Representations from Transfomers) using pre-trained stock weights of BERT-Base model and demonstrate the winning solution able to classify sarcasm with F1-score of 76.09%.
+
+# Our Approach
+<a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Approach.png" alt="Twitter Sarcasm Classification" width="1000"></a>
 
 # Understanding Data:
 
