@@ -16,7 +16,8 @@
 	<li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#built-with">Built With</a></li>
+	<li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -80,9 +81,18 @@ Implementations.
 
 In order to replicate, reproduce or rerun our BERT model, we recommend downloading pre-trained stock weights as given below
 
+# Built With
+- [Python](https://www.python.org/)
+- [Google Colab](https://colab.research.google.com/)
+- [Keras](https://keras.io/)
+- [TensorFlow](https://www.tensorflow.org/)
+
 # Prerequisites
+1. Python 3.6 or above.
+2. Jupyter or Anaconda distribution
+3. Google Colab
 
-
+we highly recommend downloading and using pre-trained stock weights of BERT-Base Model from [here](https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip)
 
 
 # Installations
@@ -107,4 +117,6 @@ $ cd models
 # https://github.com/dheerajpatta/CourseProject/blob/main/models/sarcasm_classification_bert_large.ipynb
 ```
 Additional References -
-If you want to use BERT with Colab, you can get started with the notebook [BERT FineTuning with Cloud TPUs(https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb?_sm_au_=isVs7pNrsWJRkDtjVsBFjK664v423)
+- Google [Colab](https://colab.research.google.com/)
+- All about setting up Google Colab  like a Pro from [here](https://medium.com/@robertbracco1/configuring-google-colab-like-a-pro-d61c253f7573)
+- If you want to use BERT with Colab, you can get started with the notebook [BERT FineTuning with Cloud TPUs](https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb?_sm_au_=isVs7pNrsWJRkDtjVsBFjK664v423)
