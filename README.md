@@ -84,9 +84,14 @@ In order to replicate, reproduce or rerun our BERT model, we recommend downloadi
 
 
 
+
+# Installations
+
+
 # Usage
-To clone and run our model, you'll need [Git](https://git-scm.com) or git GUI clients like [Git Kraken for Windows](https://www.gitkraken.com/download/windows64) or [Tower for Mac](https://www.git-tower.com/mac) and [Python](https://www.python.org/downloads/) 
-From your command line or terminal application:
+To clone and run our model, you'll need [Git](https://git-scm.com) or git GUI clients like [Git Kraken for Windows](https://www.gitkraken.com/download/windows64) or [Tower for Mac](https://www.git-tower.com/mac) and [Python](https://www.python.org/downloads/)
+
+From your command line or terminal application or git client:
 
 ```bash
 # Clone this repository
@@ -96,8 +101,10 @@ $ git clone https://github.com/dheerajpatta/CourseProject.git
 $ cd models
 
 # Install above prerequisties and dependencies
-$ pip install *
+# pip install *
 
-# Run the Notebook
+# Run the Jupyter Notebook
 # https://github.com/dheerajpatta/CourseProject/blob/main/models/sarcasm_classification_bert_large.ipynb
 ```
+Additional References -
+If you want to use BERT with Colab, you can get started with the notebook [BERT FineTuning with Cloud TPUs] (https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb?_sm_au_=isVs7pNrsWJRkDtjVsBFjK664v423)
