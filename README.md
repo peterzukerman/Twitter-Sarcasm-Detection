@@ -39,14 +39,14 @@ Following is the structure of our Project Repository.
 <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Project%20Structure.png" alt="Project Repo Structure" width="1000"></a>
 
 Please follow the links to navigate to respective folders -
-- Data (https://github.com/dheerajpatta/CourseProject/tree/main/data)
-- Source Code (https://github.com/dheerajpatta/CourseProject/tree/main/models)
-- Results (https://github.com/dheerajpatta/CourseProject/tree/main/sarcasm%20results)
-- Documentation (https://github.com/dheerajpatta/CourseProject/tree/main/documentation)
-	- Proposal (https://github.com/dheerajpatta/CourseProject/tree/main/documentation/project%20proposal)
-	- Progress Report (https://github.com/dheerajpatta/CourseProject/tree/main/documentation/progress%20report)
-	- Video Presentation (https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition%20-%20Video%20Presentation%20Links.pptx)
-	- Detailed Project Presentation (https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf)
+- [Data](https://github.com/dheerajpatta/CourseProject/tree/main/data)
+- [Source Code](https://github.com/dheerajpatta/CourseProject/tree/main/models)
+- [Results](https://github.com/dheerajpatta/CourseProject/tree/main/sarcasm%20results)
+- [Documentation](https://github.com/dheerajpatta/CourseProject/tree/main/documentation)
+	- [Proposal](https://github.com/dheerajpatta/CourseProject/tree/main/documentation/project%20proposal)
+	- [Progress Report](https://github.com/dheerajpatta/CourseProject/tree/main/documentation/progress%20report)
+	- [Video Presentation](https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition%20-%20Video%20Presentation%20Links.pptx)
+	- [Detailed Project Presentation](https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf)
 
 # Our Approach
 <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Approach.png" alt="Approach" width="1000"></a>
@@ -107,4 +107,4 @@ $ cd models
 # https://github.com/dheerajpatta/CourseProject/blob/main/models/sarcasm_classification_bert_large.ipynb
 ```
 Additional References -
-If you want to use BERT with Colab, you can get started with the notebook [BERT FineTuning with Cloud TPUs] (https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb?_sm_au_=isVs7pNrsWJRkDtjVsBFjK664v423)
+If you want to use BERT with Colab, you can get started with the notebook [BERT FineTuning with Cloud TPUs(https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb?_sm_au_=isVs7pNrsWJRkDtjVsBFjK664v423)
