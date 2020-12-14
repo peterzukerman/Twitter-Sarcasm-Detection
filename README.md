@@ -40,8 +40,8 @@ We present our best model based on **BERT** (Bi-directional Enconding Representa
 Following is the structure of our Project Repository.
 <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Project%20Structure.png" alt="Project Repo Structure" width="1000"></a>
 
-Please follow the links to navigate to respective folders
-[Data]https://github.com/dheerajpatta/CourseProject/tree/main/data
+Please follow the links to navigate to respective folders -
+<li>[Data](https://github.com/dheerajpatta/CourseProject/tree/main/data)</li>
 [Source Code]
 [Results]
 [Documentation]
