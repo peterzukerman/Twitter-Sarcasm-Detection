@@ -10,7 +10,9 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
+	<li><a href="#project-repo-structure">Project Repo Structure</a></li>
     <li><a href="#our-approach">Our Approach</a></li>
+	<li><a href="#understanding-data">Understanding Data</a></li>
 	<li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -34,8 +36,19 @@ and full context is provided as continous responses to each tweets.The tweets ar
 
 We present our best model based on **BERT** (Bi-directional Enconding Representations from Transfomers) using pre-trained stock weights of BERT-Base model and demonstrate the winning solution able to classify sarcasm with F1-score of 76.09%.
 
+# Project Repository Structure
+Following is the structure of our Project Repository.
+<a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Project%20Structure.png" alt="Project Repo Structure" width="1000"></a>
+
+Please follow the links to navigate to respective folders
+[Data]https://github.com/dheerajpatta/CourseProject/tree/main/data
+[Source Code]
+[Results]
+[Documentation]
+[Video Presentation]
+
 # Our Approach
-<a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Approach.png" alt="Twitter Sarcasm Classification" width="1000"></a>
+<a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Approach.png" alt="Approach" width="1000"></a>
 
 # Understanding Data:
 
