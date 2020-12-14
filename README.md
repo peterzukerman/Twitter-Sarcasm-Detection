@@ -41,11 +41,14 @@ Following is the structure of our Project Repository.
 <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Project%20Structure.png" alt="Project Repo Structure" width="1000"></a>
 
 Please follow the links to navigate to respective folders -
-- [Data] (https://github.com/dheerajpatta/CourseProject/tree/main/data) - Data
-[Source Code]
-[Results]
-[Documentation]
-[Video Presentation]
+- Data (https://github.com/dheerajpatta/CourseProject/tree/main/data)
+- Source Code (https://github.com/dheerajpatta/CourseProject/tree/main/models)
+- Results (https://github.com/dheerajpatta/CourseProject/tree/main/sarcasm%20results)
+- Documentation (https://github.com/dheerajpatta/CourseProject/tree/main/documentation)
+	- Proposal (https://github.com/dheerajpatta/CourseProject/tree/main/documentation/project%20proposal)
+	- Progress Report (https://github.com/dheerajpatta/CourseProject/tree/main/documentation/progress%20report)
+	- Video Presentation (https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition%20-%20Video%20Presentation%20Links.pptx)
+	- Detailed Project Presentation (https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf)
 
 # Our Approach
 <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Approach.png" alt="Approach" width="1000"></a>
