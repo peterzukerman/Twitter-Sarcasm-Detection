@@ -6,8 +6,12 @@
 <h4 align="center">Our solution and winning model for Text Classification Competition</h4>
 
 # Text Classification Competition: Twitter Sarcasm Detection 
+# About the Project
+The goal of this competition/project is to classify a given sequence of tweets (responses) as sarcastic or non-sarcastic. The tweets with its corresponding immediate context 
+and full context is provided as continous responses to each tweets.The tweets are provided with conversation context which is an ordered list of dialogue. The objective of this competition is to predict the “label” of the response (tweets) using the given context (either immediate or full context) 
 
-Dataset format:
+
+# Understanding Data:
 
 Each line contains a JSON object with the following fields : 
 - ***response*** :  the Tweet to be classified
@@ -28,14 +32,5 @@ The response tweet, "@USER @USER @USER I don't get this..." is a reply to its im
 | Train | Test |
 |-------|------|
 | 5000  | 1800 |
-
-For Test, we've provided you the ***response*** and the ***context***. We also provide the ***id*** (i.e., identifier) to report the results.
-
-***Submission Instructions*** : Please add a comma separated file named `answer.txt` containing the predictions on the test dataset. The file should have no headers and have exactly 1800 rows. Each row must have the sample id and the predicted label. For example:
-
-twitter_1,SARCASM  
-twitter_2,NOT_SARCASM  
-...
-
 
 
