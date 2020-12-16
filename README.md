@@ -47,6 +47,8 @@ Please follow the links to navigate to respective folders -
 	- [Proposal](https://github.com/dheerajpatta/CourseProject/tree/main/documentation/project%20proposal)
 	- [Progress Report](https://github.com/dheerajpatta/CourseProject/tree/main/documentation/progress%20report)
 	- [Video Presentation](https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition%20-%20Video%20Presentation%20Links.pptx)
+	- [Long Form Video Link](https://mediaspace.illinois.edu/media/t/1_lbmrkxnd)
+	- [Short Form Video Link](https://mediaspace.illinois.edu/media/t/1_8an3avdx)
 	- [Detailed Project Presentation](https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf)
 
 # Our Approach
