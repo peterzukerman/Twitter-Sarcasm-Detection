@@ -3,7 +3,7 @@
   <a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Twitter%20Sarcasm.png" alt="Twitter Sarcasm Classification" width="1000"></a>
 </h1>
 
-<h4 align="center">Our solution and winning model for Text Classification Competition</h4>
+<h4 align="center">Our solution and winning model for the Coursera Text Classification Competition</h4>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
