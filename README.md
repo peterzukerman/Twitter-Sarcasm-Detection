@@ -36,8 +36,6 @@ and full context is provided as continous responses to each tweets.The tweets ar
 We present our best model based on **BERT** (Bi-directional Enconding Representations from Transfomers) using pre-trained stock weights of BERT-Base model and demonstrate the winning solution able to classify sarcasm with F1-score of 76.09%.
 
 # Project Repository Structure
-Following is the structure of our Project Repository.
-<a href="https://github.com/dheerajpatta/CourseProject/blob/main/documentation/Twitter%20Sarcasm%20Classification%20Competition.pdf"><img src="https://github.com/dheerajpatta/CourseProject/blob/main/images/Project%20Structure.png" alt="Project Repo Structure" width="1000"></a>
 
 Please follow the links to navigate to respective folders -
 - [Data](https://github.com/dheerajpatta/CourseProject/tree/main/data)
